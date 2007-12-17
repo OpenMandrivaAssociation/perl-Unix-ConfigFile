@@ -12,7 +12,6 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{realname}/
 Source:		%{realname}-%{version}.tar.bz2
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	perl-devel
 
 %description
