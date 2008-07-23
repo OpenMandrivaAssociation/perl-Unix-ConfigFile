@@ -1,7 +1,7 @@
 %define realname Unix-ConfigFile
 %define name perl-%{realname}
 %define version 0.06
-%define release %mkrel 6
+%define release %mkrel 8
 
 Name:		%{name}
 Summary:	Unix::ConfigFile module for Perl
