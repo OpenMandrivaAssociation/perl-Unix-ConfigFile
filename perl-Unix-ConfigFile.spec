@@ -8,7 +8,7 @@ Release:	4
 Summary:	Unix::ConfigFile module for Perl
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Unix/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
