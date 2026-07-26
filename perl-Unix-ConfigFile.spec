@@ -1,15 +1,13 @@
 %define upstream_name    Unix-ConfigFile
-%define upstream_version 0.06
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.06
+Release:	6
 
 Summary:	Unix::ConfigFile module for Perl
 License:	GPL
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Unix-ConfigFile
-Source0:	https://cpan.metacpan.org/authors/id/S/SS/SSNODGRA/Unix-ConfigFile-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SS/SSNODGRA/Unix-ConfigFile-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -19,7 +17,7 @@ BuildArch:	noarch
 Easy access to data in many formats
 
 %prep
-%setup -q -n  %{upstream_name}-%{upstream_version}
+%setup -q -n  %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -40,9 +38,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %changelog
 * Mon Aug 03 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.60.0-1mdv2010.0
 + Revision: 408096
-- rebuild using %%perl_convert_version
-
-* Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.06-8mdv2009.0
+- rebuild using %0.06 Wed Jul 23 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.06-8mdv2009.0
 + Revision: 242117
 - rebuild
 - kill re-definition of %%buildroot on Pixel's request
